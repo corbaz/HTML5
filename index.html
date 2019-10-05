@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>JCC Producciones</title>
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <meta content="Pagina de JCC Producciones" name="description" />
+    <meta content="width=device-width, initial-scale=1" name="viewport-width" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/vendor/normalize_8.0.1.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/vendor/flexboxgrid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/vendor/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./fonts/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/vendor/jquery-ui.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/vendor/jquery.mobile-1.5.0-rc1.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/vendor/Header-Blue.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jcc.css" />
+    <script src="./js/vendor/modernizr-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <!--[if IE 9]>
+      <p class="browserupgrade">
+        Estás Usando un Navegador
+        <strong>desactualizado. Por Favor</strong>
+        <a href="https://browsehappy.com/">Actualice su Navegador</a>
+      </p>
+    <![endif]-->
+
+    <div class="contenedor-video">
+      <video id="myvideo" class="myvideo" autoplay loop>
+        <source src="./videos/video.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div id="menu-barra" class="header-blue">
+      <nav
+        class="navbar navbar-light navbar-expand-md navigation-clean-search"
+        id="barra_menu"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" id="logos">Vidriera</a
+          ><button
+            data-toggle="collapse"
+            class="navbar-toggler"
+            data-target="#navcol-1"
+          >
+            <span class="sr-only">Toggle navigation</span
+            ><span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="dropdown-toggle nav-link"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  >Cartelerias</a
+                >
+                <div class="dropdown-menu" role="menu">
+                  <a
+                    class="dropdown-item"
+                    role="presentation"
+                    href="#"
+                    onclick="rectangulo()"
+                    >First Item</a
+                  >
+                  <a class="dropdown-item" role="presentation" href="#"
+                    >Second Item</a
+                  >
+                  <a class="dropdown-item" role="presentation" href="#"
+                    >Third Item</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline mr-auto" target="_self">
+              <div class="form-group">
+                <label for="search-field"><i class="fa fa-search"></i></label
+                ><input
+                  class="form-control search-field"
+                  type="search"
+                  id="search-field"
+                  name="search"
+                />
+              </div>
+            </form>
+            <span class="navbar-text">
+              <a class="login" href="#">Log In</a></span
+            ><a class="btn btn-light action-button" role="button" href="#"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- middle-xs center-xs -->
+
+    <div id="area_pizarra" class="area_pizarra">
+      <canvas id="pizarra" class="pizarra" styles="z-index:2"> </canvas>
+      <div class="barra" id="datos" styles="z-index:1">
+        <ul class="barraUL">
+          <li>
+            <div class="form-group">
+              <label for="iXL"></label>
+              <input
+                type="number"
+                class="form-control"
+                name="iX"
+                id="iX"
+                aria-describedby="helpId"
+                placeholder=""
+              />
+              <small id="helpId" class="form-text text-muted">Valor X</small>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label for="iY"></label>
+              <input
+                type="number"
+                class="form-control"
+                name="iY"
+                id="iY"
+                aria-describedby="helpId"
+                placeholder=""
+              />
+              <small id="helpId2" class="form-text text-muted">Valor Y</small>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="./js/vendor/popper.min.js"></script>
+    <script src="./js/vendor/jquery-ui.js"></script>
+    <script src="./js/vendor/jquery.mobile-1.5.0-rc1.js"></script>
+
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/jcc.js"></script>
+  </body>
+</html>

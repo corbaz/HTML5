@@ -1,0 +1,54 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "ie=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title JCC Producciones
+    %meta{:content => "Pagina de JCC Producciones", :name => "description"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport-width"}/
+    %link{:href => "./css/vendor/normalize.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "./css/vendor/flexboxgrid.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "./css/vendor/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "./css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "./js/vendor/modernizr-3.7.1.min.js"}
+  %body
+    /[if IE 9]
+      <p class="browserupgrade">
+      Estás Usando un Navegador
+      <strong>desactualizado. Por Favor</strong>
+      <a href="https://browsehappy.com/">Actualice su Navegador</a>
+      </p>
+    .video-container
+      %video{:autoplay => "", :height => "720", :loop => "", :posters => "/videos/video.jpg", :width => "1280"}
+        %source{:src => "./videos/video.mp4", :typ => "video/mp4"}
+    .row.alto-100.middle-xs.center-xs.relative
+      -menu=['Inicio','Menú','Galería','Contacto','Como llegar']
+      %nav#barra_menu.fixed.blanco.arriba.derecha
+        %ul.list-inline.nav-barra
+          -menu.each do |item|
+            %li
+              %a{}=item
+      .col-xs-12
+        .box.blanco
+          %img{:height => "15%", :src => "./img/escudo_color.png", :width => "15%"}/
+          %h1.fuente-dancing.titulo.sin-margen Banca 25
+          %p#is-open
+            On-Line
+            -# // TODO
+            %span.glyphicon.glyphicon-search
+      #descripcion.absolute.abajo.fuente-medium.fnegro.blanco.pad-10-15.ancho-100
+        .row.middle-xs
+          .col-xs-7.col-sm-6
+            ABIERTO LOS 365 DIAS DEL AÑO
+          .col-sx
+            .box
+              %nav.arriba.derecha
+                %ul.list-inline.nav-barra
+                  -menu.each do |item|
+                    %li
+                      %a{}=item
+    .alto-100.fnegro
+
+    %script{:src => "./js/vendor/jquery-3.4.1.min.js"}
+    %script{:src => "./js/vendor/popper.min.js"}
+    %script{:src => "./js/vendor/bootstrap.min.js"}
