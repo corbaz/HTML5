@@ -1,0 +1,6 @@
+# *.data ignora todos los archivos .data
+# !final.data excepto el archivo final.data
+
+programas/
+videos/
+node_modules/

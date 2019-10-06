@@ -1,0 +1,41 @@
+!!!
+%html.no-js{:lang => ""}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %title Bolier
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:href => "site.webmanifest", :rel => "manifest"}/
+    %link{:href => "icon.png", :rel => "apple-touch-icon"}/
+    / Place favicon.ico in the root directory
+    %link{:href => "css/normalize.css", :rel => "stylesheet"}/
+    %link{:href => "css/main.css", :rel => "stylesheet"}/
+    %meta{:content => "#fafafa", :name => "theme-color"}/
+  %body
+    /[if IE 9]
+      "
+      \%p{class:"browserupgrade"}
+      You are using an <strong ong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    / Add your site or application content here
+    %p Hello world! This is HTML5 Boilerplate.
+    %script{:src => "js/vendor/modernizr-3.7.1.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=", :src => "https://code.jquery.com/jquery-3.4.1.min.js"}
+    :javascript
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
+        );
+    %script{:src => "js/plugins.js"}
+    %script{:src => "js/main.js"}
+    / Google Analytics: change UA-XXXXX-Y to be your site's ID.
+    :javascript
+      window.ga = function() {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    %script{:async => "", :src => "https://www.google-analytics.com/analytics.js"}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html class="js sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>JCC Producciones</title>
+<meta content="Pagina de JCC Producciones" name="description">
+<meta content="width=device-width, initial-scale=1" name="viewport-width">
+<link href="./JCC Producciones_files/normalize.css" rel="stylesheet" type="text/css">
+<link href="./JCC Producciones_files/css" rel="stylesheet" type="text/css">
+<link href="./JCC Producciones_files/flexboxgrid.min.css" rel="stylesheet" type="text/css">
+<link href="./JCC Producciones_files/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="./JCC Producciones_files/style.css" rel="stylesheet" type="text/css"><script src="./JCC Producciones_files/modernizr-3.7.1.min.js.descarga"></script></head>
+
+
+
+
+<body>
+<!--[if IE 9]>
+<p class="browserupgrade">
+Estás Usando un Navegador
+<strong>desactualizado. Por Favor</strong>
+<a href="https://browsehappy.com/">Actualice su Navegador</a>
+</p>
+<![endif]-->
+<div class="video-container">
+<video autoplay="" height="720" loop="" posters="/videos/video.jpg" width="1280">
+<source src="/videos/video.mp4" typ="video/mp4">
+</video>
+</div>
+<div class="row alto-100 middle-xs center-xs relative">
+<div class="col-xs-12">
+<div class="box blanco">
+<img height="15%" src="./JCC Producciones_files/escudo_color.png" width="15%">
+<h1 class="fuente-dancing titulo sin-margen">Banca 25</h1>
+<p id="is-open">On-Line</p>
+</div>
+</div>
+<nav class="fixed blanco arriba derecha" id="barra_menu">
+<ul class="list-inline" style="display: inline-flex">
+<li>Inicio</li>
+<li>Menú</li>
+<li>Galería</li>
+<li>Contacto</li>
+<li>Como llegar.</li>
+</ul>
+</nav>
+</div>
+<script src="./JCC Producciones_files/jquery-3.4.1.min.js.descarga"></script>
+<script src="./JCC Producciones_files/popper.min.js.descarga"></script>
+<script src="./JCC Producciones_files/bootstrap.min.js.descarga"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
