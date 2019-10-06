@@ -4,3 +4,4 @@
 programas/
 videos/
 node_modules/
+!videos/video.mp4
